@@ -1,5 +1,6 @@
 fastapi[all]
 motor
+dnspython
 pydantic[email]
 python-jose[cryptography]
 bcrypt
