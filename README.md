@@ -117,4 +117,18 @@ python backend/seed.py
    ```bash
    npm run dev
    ```
-   *Frontend interface will be hosted at http://localhost:5173*
+   *Frontend interface will be hosted at http://localhost:5174*
+
+---
+
+## ☁️ Vercel Deployment Configuration
+
+The repository is configured for immediate deployment as a unified monorepo on **Vercel** via the root-level `vercel.json` routing matrix.
+
+### Setup Steps:
+1. **Import the repository:** Sign in to your [Vercel Console](https://vercel.com/) and import `elmaxproart/mongo`.
+2. **Environment Variables:** In the project settings, add the following parameters:
+   - `MONGO_URL`: Your MongoDB Atlas connection URI (e.g. `mongodb+srv://...`).
+   - `VITE_API_URL`: (Optional) Leave empty or set to `/` as Vercel proxies API routes under the same domain.
+3. **Deploy:** Click **Deploy**. Vercel will build the frontend files and host the FastAPI handlers as serverless Python functions automatically.
+
