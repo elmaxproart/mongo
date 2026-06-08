@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+dist/
+build/
+.env
+.env.local
+.env.*.local
+
+# Python Caches & Virtualenvs
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+.pytest_cache/
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Agent files
+.agent/
+.gemini/
+*tempmediaStorage/
+browser_recordings/
+html_artifacts/
+logs/
